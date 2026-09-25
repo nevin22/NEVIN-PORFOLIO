@@ -144,24 +144,6 @@ export function Shell({ children }: { children: React.ReactNode }) {
           })}
         </nav>
 
-        <div className="m-3 rounded-2xl bg-card p-4 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)]">
-          <div className="flex items-center gap-3">
-            <span className="relative grid h-10 w-10 place-items-center rounded-full bg-white/6 text-xs font-semibold">
-              NG
-              <span className="absolute right-0 bottom-0 h-2.5 w-2.5 rounded-full bg-positive ring-2 ring-card" />
-            </span>
-            <div className="min-w-0">
-              <p className="truncate text-sm font-medium">{profile.shortName} Gabriel</p>
-              <p className="text-xs text-positive">{profile.availability}</p>
-            </div>
-          </div>
-          <a
-            href={`mailto:${profile.email}`}
-            className="mt-4 flex h-10 items-center justify-center rounded-xl bg-white/6 text-sm font-medium transition hover:bg-white/10"
-          >
-            Email me
-          </a>
-        </div>
       </aside>
 
       <div className="lg:pl-64">

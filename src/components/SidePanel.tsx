@@ -66,21 +66,6 @@ export function SidePanel() {
 
         <p className="mt-5 text-sm leading-6 text-muted">{profile.location}</p>
 
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-1">
-          <a
-            href={`mailto:${profile.email}`}
-            className="flex h-11 items-center justify-center rounded-xl border border-white/10 bg-white/8 text-sm font-semibold text-foreground transition hover:bg-white/12"
-          >
-            Email Nevin
-          </a>
-          <a
-            href={profile.resumeHref}
-            className="flex h-11 items-center justify-center rounded-xl border border-white/10 text-sm font-medium transition hover:bg-white/5"
-            download
-          >
-            Download resume
-          </a>
-        </div>
       </section>
 
       <div className="grid gap-12 sm:grid-cols-2 xl:grid-cols-1 xl:gap-12">
