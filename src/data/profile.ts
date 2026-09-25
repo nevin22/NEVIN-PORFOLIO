@@ -1,12 +1,3 @@
-/**
- * Portfolio content.
- *
- * To feature a real project screenshot:
- * 1. Put the image in public/work (png or jpg).
- * 2. Change that slide's `image` path, for example "/work/dashboard.png".
- * 3. Update the title, summary, and tags.
- */
-
 export const profile = {
   name: "Nevin Gabriel Prequencia",
   shortName: "Nevin",
@@ -20,7 +11,7 @@ export const profile = {
   resumeHref: "/Nevin-Gabriel-Prequencia-Resume.pdf",
   availability: "Open to work",
   summary:
-    "I build web applications with React, TypeScript, and Node.js, and stay with them through APIs, databases, cloud deployment, CI/CD, and production support. My recent work also covers real-time messaging, React Native, and AI features such as LLM integration and tool-calling agents.",
+    "Full-Stack Developer building modern web applications with React, TypeScript, JavaScript, Node.js, and Express.js — covering the full lifecycle from frontend and backend to APIs, databases, cloud deployment, CI/CD, and production support. Experienced with real-time systems using MQTT and Redis, AI-powered feature integration, cloud platforms including Azure and GCP, and mobile development with React Native.",
 };
 
 export const highlights = [
