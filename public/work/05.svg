@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" fill="none">
+  <rect width="1280" height="800" fill="#14161c"/>
+  <text x="64" y="78" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700">Agent workflow</text>
+  <text x="1048" y="72" fill="#3cd6f5" font-family="Segoe UI, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">PREVIEW</text>
+  <rect x="64" y="120" width="760" height="620" rx="20" fill="#22242c"/>
+  <rect x="96" y="156" width="420" height="72" rx="16" fill="#2c2e36"/>
+  <text x="120" y="198" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="18">Summarize the open incidents</text>
+  <rect x="220" y="260" width="560" height="120" rx="16" fill="#16343c"/>
+  <text x="248" y="304" fill="#3cd6f5" font-family="Segoe UI, sans-serif" font-size="14" font-weight="700">TOOL CALL</text>
+  <text x="248" y="340" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="18">lookupIncidents({ status: "open" })</text>
+  <rect x="96" y="412" width="640" height="160" rx="16" fill="#2c2e36"/>
+  <text x="120" y="456" fill="#b4b6c0" font-family="Segoe UI, sans-serif" font-size="16">3 incidents are still open. Two are on the</text>
+  <text x="120" y="488" fill="#b4b6c0" font-family="Segoe UI, sans-serif" font-size="16">billing service and one is waiting on a</text>
+  <text x="120" y="520" fill="#b4b6c0" font-family="Segoe UI, sans-serif" font-size="16">device heartbeat.</text>
+  <rect x="96" y="600" width="500" height="64" rx="16" fill="#14161c" stroke="#3a3d48"/>
+  <text x="120" y="638" fill="#8e909b" font-family="Segoe UI, sans-serif" font-size="16">Ask a follow-up</text>
+  <rect x="856" y="120" width="360" height="620" rx="20" fill="#22242c"/>
+  <text x="888" y="176" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="20" font-weight="650">Stack</text>
+  <rect x="888" y="210" width="296" height="72" rx="16" fill="#2c2e36"/>
+  <text x="912" y="252" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="18">Vercel AI SDK</text>
+  <rect x="888" y="300" width="296" height="72" rx="16" fill="#2c2e36"/>
+  <text x="912" y="342" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="18">OpenAI</text>
+  <rect x="888" y="390" width="296" height="72" rx="16" fill="#2c2e36"/>
+  <text x="912" y="432" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="18">Anthropic Claude</text>
+  <rect x="888" y="480" width="296" height="72" rx="16" fill="#2c2e36"/>
+  <text x="912" y="522" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="18">Prompt engineering</text>
+  <rect x="888" y="590" width="296" height="100" rx="16" fill="#12343c"/>
+  <text x="912" y="632" fill="#3cd6f5" font-family="Segoe UI, sans-serif" font-size="16" font-weight="700">Tool calling</text>
+  <text x="912" y="660" fill="#d7f7fd" font-family="Segoe UI, sans-serif" font-size="15">Agents that use your APIs</text>
+</svg>

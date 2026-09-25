@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" fill="none">
+  <rect width="1280" height="800" fill="#14161c"/>
+  <rect x="0" y="0" width="240" height="800" fill="#101116"/>
+  <rect x="28" y="32" width="40" height="40" rx="12" fill="#7c6cf6"/>
+  <text x="48" y="58" text-anchor="middle" fill="#fff" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700">A</text>
+  <rect x="24" y="104" width="192" height="44" rx="12" fill="#26282e"/>
+  <rect x="24" y="160" width="192" height="44" rx="12" fill="#1a1c22"/>
+  <rect x="24" y="216" width="192" height="44" rx="12" fill="#1a1c22"/>
+  <rect x="24" y="272" width="192" height="44" rx="12" fill="#1a1c22"/>
+  <text x="1040" y="58" fill="#3cd6f5" font-family="Segoe UI, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">PREVIEW</text>
+  <text x="280" y="64" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700">Operations</text>
+  <rect x="280" y="104" width="220" height="140" rx="18" fill="#22242c"/>
+  <text x="304" y="150" fill="#8e909b" font-family="Segoe UI, sans-serif" font-size="15">Open</text>
+  <text x="304" y="198" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="36" font-weight="700">24</text>
+  <rect x="516" y="104" width="220" height="140" rx="18" fill="#22242c"/>
+  <text x="540" y="150" fill="#8e909b" font-family="Segoe UI, sans-serif" font-size="15">In review</text>
+  <text x="540" y="198" fill="#3cd6f5" font-family="Segoe UI, sans-serif" font-size="36" font-weight="700">11</text>
+  <rect x="752" y="104" width="220" height="140" rx="18" fill="#22242c"/>
+  <text x="776" y="150" fill="#8e909b" font-family="Segoe UI, sans-serif" font-size="15">Shipped</text>
+  <text x="776" y="198" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="36" font-weight="700">86</text>
+  <rect x="988" y="104" width="252" height="140" rx="18" fill="#22242c"/>
+  <text x="1012" y="150" fill="#8e909b" font-family="Segoe UI, sans-serif" font-size="15">API</text>
+  <text x="1012" y="198" fill="#4c8dff" font-family="Segoe UI, sans-serif" font-size="36" font-weight="700">OK</text>
+  <rect x="280" y="268" width="960" height="488" rx="18" fill="#22242c"/>
+  <rect x="308" y="300" width="904" height="56" rx="12" fill="#2c2e36"/>
+  <rect x="308" y="372" width="904" height="56" rx="12" fill="#2c2e36"/>
+  <rect x="308" y="444" width="904" height="56" rx="12" fill="#2c2e36"/>
+  <rect x="308" y="516" width="904" height="56" rx="12" fill="#2c2e36"/>
+  <rect x="308" y="588" width="904" height="56" rx="12" fill="#2c2e36"/>
+  <circle cx="340" cy="328" r="8" fill="#3cd6f5"/>
+  <circle cx="340" cy="400" r="8" fill="#4c8dff"/>
+  <circle cx="340" cy="472" r="8" fill="#3dd68c"/>
+  <circle cx="340" cy="544" r="8" fill="#3cd6f5"/>
+  <circle cx="340" cy="616" r="8" fill="#8e909b"/>
+  <text x="368" y="334" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="18">Accounts service</text>
+  <text x="368" y="406" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="18">Billing API</text>
+  <text x="368" y="478" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="18">Schedule board</text>
+  <text x="368" y="550" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="18">Notifications</text>
+  <text x="368" y="622" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="18">Reporting</text>
+  <text x="1040" y="334" fill="#8e909b" font-family="Segoe UI, sans-serif" font-size="16">React</text>
+  <text x="1040" y="406" fill="#8e909b" font-family="Segoe UI, sans-serif" font-size="16">Express</text>
+  <text x="1040" y="478" fill="#8e909b" font-family="Segoe UI, sans-serif" font-size="16">TypeScript</text>
+  <text x="1040" y="550" fill="#8e909b" font-family="Segoe UI, sans-serif" font-size="16">Node.js</text>
+  <text x="1040" y="622" fill="#8e909b" font-family="Segoe UI, sans-serif" font-size="16">PostgreSQL</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 800" fill="none">
+  <rect width="1280" height="800" fill="#14161c"/>
+  <text x="64" y="78" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700">Release pipeline</text>
+  <text x="1048" y="72" fill="#3cd6f5" font-family="Segoe UI, sans-serif" font-size="14" font-weight="700" letter-spacing="1.5">PREVIEW</text>
+  <rect x="64" y="140" width="340" height="220" rx="20" fill="#22242c"/>
+  <text x="92" y="188" fill="#8e909b" font-family="Segoe UI, sans-serif" font-size="15">01</text>
+  <text x="92" y="236" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700">Build</text>
+  <text x="92" y="280" fill="#b4b6c0" font-family="Segoe UI, sans-serif" font-size="16">Install, compile, bundle</text>
+  <rect x="92" y="308" width="88" height="28" rx="14" fill="#12343c"/>
+  <text x="136" y="327" text-anchor="middle" fill="#3cd6f5" font-family="Segoe UI, sans-serif" font-size="13">Passed</text>
+  <rect x="470" y="140" width="340" height="220" rx="20" fill="#22242c"/>
+  <text x="498" y="188" fill="#8e909b" font-family="Segoe UI, sans-serif" font-size="15">02</text>
+  <text x="498" y="236" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700">Test</text>
+  <text x="498" y="280" fill="#b4b6c0" font-family="Segoe UI, sans-serif" font-size="16">Checks before release</text>
+  <rect x="498" y="308" width="88" height="28" rx="14" fill="#12343c"/>
+  <text x="542" y="327" text-anchor="middle" fill="#3cd6f5" font-family="Segoe UI, sans-serif" font-size="13">Passed</text>
+  <rect x="876" y="140" width="340" height="220" rx="20" fill="#1a3148"/>
+  <text x="904" y="188" fill="#8eb6ff" font-family="Segoe UI, sans-serif" font-size="15">03</text>
+  <text x="904" y="236" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="28" font-weight="700">Release</text>
+  <text x="904" y="280" fill="#d5e4ff" font-family="Segoe UI, sans-serif" font-size="16">Deploy to cloud</text>
+  <rect x="904" y="308" width="110" height="28" rx="14" fill="#4c8dff"/>
+  <text x="959" y="327" text-anchor="middle" fill="#fff" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700">Running</text>
+  <path d="M404 250h66" stroke="#3cd6f5" stroke-width="3"/>
+  <path d="M810 250h66" stroke="#4c8dff" stroke-width="3"/>
+  <rect x="64" y="400" width="552" height="340" rx="20" fill="#22242c"/>
+  <text x="96" y="452" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="20" font-weight="650">Microsoft Azure</text>
+  <text x="96" y="500" fill="#b4b6c0" font-family="Segoe UI, sans-serif" font-size="16">Hosting, messaging, integrations</text>
+  <rect x="96" y="540" width="460" height="14" rx="7" fill="#2e3038"/>
+  <rect x="96" y="540" width="340" height="14" rx="7" fill="#3cd6f5"/>
+  <rect x="96" y="580" width="460" height="14" rx="7" fill="#2e3038"/>
+  <rect x="96" y="580" width="260" height="14" rx="7" fill="#4c8dff"/>
+  <rect x="96" y="620" width="460" height="14" rx="7" fill="#2e3038"/>
+  <rect x="96" y="620" width="400" height="14" rx="7" fill="#7c6cf6"/>
+  <rect x="640" y="400" width="576" height="340" rx="20" fill="#22242c"/>
+  <text x="672" y="452" fill="#f4f5f7" font-family="Segoe UI, sans-serif" font-size="20" font-weight="650">Google Cloud</text>
+  <text x="672" y="500" fill="#b4b6c0" font-family="Segoe UI, sans-serif" font-size="16">Data processing and delivery</text>
+  <rect x="672" y="560" width="200" height="110" rx="16" fill="#2c2e36"/>
+  <text x="772" y="622" text-anchor="middle" fill="#3cd6f5" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700">GCP</text>
+  <rect x="892" y="560" width="200" height="110" rx="16" fill="#2c2e36"/>
+  <text x="992" y="622" text-anchor="middle" fill="#4c8dff" font-family="Segoe UI, sans-serif" font-size="18" font-weight="700">AWS</text>
+</svg>
