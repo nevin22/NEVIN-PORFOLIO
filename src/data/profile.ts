@@ -16,6 +16,8 @@ export const profile = {
     "I take a feature from the requirement through the interface, the API, and deployment, then stay with it in production: releases, bugs, and the next change. That is the kind of ownership a small team needs.",
 };
 
+export const buildPhrases = ["real-time systems", "AI features", "mobile apps"] as const;
+
 export const highlights = [
   "React",
   "TypeScript",
@@ -109,8 +111,8 @@ export const skillGroups = [
   },
   {
     title: "Cloud",
-    lead: "Azure & GCP",
-    items: ["AWS", "CI/CD", "Azure Functions", "Azure DevOps", "Azure App Service", "Azure Storage", "GCP Buckets", "GCP Cloud Run", "GCP Cloud Build", "Docker"],
+    lead: "Azure",
+    items: ["GCP", "AWS", "Docker", "CI/CD", "Pub/Sub"],
   },
   {
     title: "Data",
