@@ -4,29 +4,31 @@ export const profile = {
   role: "Full-Stack Developer",
   location: "Malaybalay, Northern Mindanao, Philippines",
   email: "gabrielnevin@gmail.com",
-  phoneDisplay: "0926 896 0194",
-  phoneHref: "tel:+639268960194",
   linkedin: "https://www.linkedin.com/in/nevingabriel",
   linkedinLabel: "linkedin.com/in/nevingabriel",
+  github: "https://github.com/nevin22",
+  githubLabel: "github.com/nevin22",
   resumeHref: "/Nevin-Gabriel-Prequencia-Resume.pdf",
   availability: "Open to work",
   summary:
-    "Full-Stack Developer building modern web applications with React, TypeScript, JavaScript, Node.js, and Express.js — covering the full lifecycle from frontend and backend to APIs, databases, cloud deployment, CI/CD, and production support. Experienced with real-time systems using MQTT and Redis, AI-powered feature integration, cloud platforms including Azure and GCP, and mobile development with React Native.",
+    "Full-stack developer working in React, TypeScript, and Node.js for the web, and React Native for mobile, with real-time systems on MQTT and Redis and cloud delivery on Azure and GCP.",
+  howIWork:
+    "I take a feature from the requirement through the interface, the API, and deployment, then stay with it in production: releases, bugs, and the next change. That is the kind of ownership a small team needs.",
 };
 
 export const highlights = [
   "React",
   "TypeScript",
-  "Next.js",
   "Node.js",
+  "Vercel AI SDK",
+  "Next.js",
   "Express",
-  "React Native",
-  "PostgreSQL",
   "MQTT",
   "Redis",
+  "React Native",
+  "PostgreSQL",
   "Azure",
   "GCP",
-  "Vercel AI SDK",
 ];
 
 export const stats = [
@@ -44,11 +46,12 @@ export const jobs = [
     dates: "April 2021 — Present",
     current: true,
     points: [
-      "Build and maintain full-stack web applications with React, TypeScript, JavaScript, Node.js, and Express, including reusable interfaces, backend services, and APIs.",
-      "Integrate MQTT for real-time device and system data, and use Redis for caching, messaging, and backend workflows.",
-      "Ship and support applications on Microsoft Azure and Google Cloud Platform, including hosting, data processing, messaging, and system integrations.",
-      "Maintain CI/CD pipelines and production systems: releases, debugging, and root-cause analysis.",
-      "Work with clients, project managers, and developers to turn requirements into technical design and working software.",
+      "Take features from client requirements through the React and TypeScript interface and the Node.js and Express API, then support them in production.",
+      "Stream live device and sensor data over MQTT into dashboards, and use Redis for caching and backend workflows.",
+      "Post-process demographic data and vehicle attributes in Databricks.",
+      "Write Python scripts for broker subscriptions and related tasks.",
+      "Deploy and run those systems on Azure and GCP, covering hosting, messaging, and data processing.",
+      "Own the release path: CI/CD, production debugging, and root-cause analysis when something breaks.",
     ],
   },
   {
@@ -58,8 +61,8 @@ export const jobs = [
     dates: "March 2018 — February 2021",
     current: false,
     points: [
-      "Designed, built, and maintained React Native applications from requirements through features, interfaces, and release.",
-      "Tested and troubleshot builds before deployment, and worked with developers and performance engineers on bottlenecks and supportability.",
+      "Designed and shipped React Native apps, including Visitour and Streetby, from the requirement through the interface and the release.",
+      "Tested builds before they went out, and worked with performance engineers on bottlenecks.",
     ],
   },
   {
@@ -84,98 +87,108 @@ export const education = {
 
 export const skillGroups = [
   {
+    title: "AI",
+    lead: "LLM integration",
+    items: ["Vercel AI SDK", "Tool-calling agents", "RAG implementation"],
+    note: "",
+  },
+  {
     title: "Frontend",
     lead: "React",
-    items: ["Next.js", "TypeScript", "JavaScript", "HTML", "CSS", "Vite"],
+    items: ["Next.js", "TypeScript"],
   },
   {
     title: "Backend",
     lead: "Node.js",
-    items: ["Express.js", "Hapi.js", "REST APIs", "GraphQL"],
-  },
-  {
-    title: "Mobile",
-    lead: "React Native",
-    items: ["Xcode", "Android Studio"],
+    items: ["Express.js", "Python", "REST APIs"],
   },
   {
     title: "Real-time",
     lead: "MQTT",
-    items: ["Redis", "Pub/Sub"],
+    items: ["Redis", "WebSocket"],
   },
   {
     title: "Cloud",
     lead: "Azure & GCP",
-    items: ["AWS", "DigitalOcean", "CI/CD"],
+    items: ["AWS", "CI/CD", "Azure Functions", "Azure DevOps", "Azure App Service", "Azure Storage", "GCP Buckets", "GCP Cloud Run", "GCP Cloud Build", "Docker"],
   },
   {
     title: "Data",
     lead: "PostgreSQL",
-    items: ["SQL", "MongoDB", "Firebase", "Snowflake", "Databricks"],
+    items: ["SQL", "MongoDB", "Snowflake", "Databricks"],
   },
   {
-    title: "AI",
-    lead: "LLM integration",
-    items: ["OpenAI", "Anthropic Claude", "Vercel AI SDK", "Prompt engineering", "Tool-calling agents"],
-  },
-  {
-    title: "Tools",
-    lead: "Git",
-    items: ["CI/CD pipelines", "SVN", "Python", "Cursor", "GitHub Copilot"],
-  },
+    title: "Mobile",
+    lead: "React Native",
+    items: ["Xcode", "Android Studio", "Ionic"] as string[],
+  }
 ];
 
-export const workNote = "";
+export const workNote = "These screenshots are client work, and the code is not public.";
 
-export const work = [
+export type WorkItem = {
+  title: string;
+  summary: string;
+  image: string;
+  tags: string[];
+  nda?: boolean;
+  github?: string;
+  demo?: string;
+};
+
+export const work: WorkItem[] = [
   {
     title: "Visitour",
     summary:
-      "One of my first two mobile apps. People browse attractions, beaches, mountains, and cities. Built with React Native and a Node.js backend.",
+      "Visitour is an all-in-one app for tourists, built with React Native and a Node.js and Express backend, with PesoPay as the payment gateway. People can book places to stay, book trips, and see what there is to explore wherever they are.",
     image: "/work/visitour.png",
-    tags: ["React Native", "Node.js"],
+    tags: ["React Native", "Node.js", "Express", "PesoPay"],
   },
   {
     title: "Streetby",
     summary:
-      "The other of my first two mobile apps. On-demand delivery, parcels, grocery, and personal shopping. React Native on the app, Node.js on the backend.",
+      "Streetby is a lifestyle platform where merchants and consumers share a marketplace in one mobile app. It was built with React Native, and Node.js with Hapi.js on the backend, with PayMongo as the payment gateway.",
     image: "/work/streetby.png",
-    tags: ["React Native", "Node.js"],
+    tags: ["React Native", "Node.js", "Hapi.js", "PayMongo"],
   },
   {
-    title: "Streetby ordering",
+    title: "Streetby",
     summary:
-      "Merchant ordering inside Streetby. Categories, item quantities, and a cart before checkout, on the same React Native and Node.js stack.",
+      "Merchant ordering screen inside Streetby. It lets people order food from more than one merchant. Much like food panda. Though streetby offers more than just food.",
     image: "/work/streetby-order.png",
     tags: ["React Native", "Node.js"],
   },
   {
     title: "User management",
     summary:
-      "After the mobile apps, full-stack web work. This admin screen covers users, roles, and site access, with React on the front and Node.js for the API.",
+      "This admin panel was built with React and Ant Design. It manages user roles, site access, and more in one place, and it supports multi-tenancy.",
     image: "/work/user-management.png",
-    tags: ["React", "Node.js"],
+    tags: ["React", "Ant Design"],
+    nda: true,
   },
   {
     title: "Coatro targeting",
     summary:
-      "Signage campaigns in Coatro. React screens for the strategy, which displays it runs on, the schedule, and how segments are weighted. Node.js on the backend.",
+      "Signage campaigns had to hit the right displays, on a schedule, with weighted segments. I built the React screens and the Node.js services for strategy, displays, schedule, and segment weight.",
     image: "/work/coatro.png",
-    tags: ["React", "Node.js"],
+    tags: ["React", "Node.js", "Tailwind CSS"],
+    nda: true,
   },
   {
     title: "Device monitoring",
     summary:
-      "Live view of edge devices and sensors. React dashboards, MQTT clients for the device data, and Databricks for post-processing before it hits the screen.",
+      "This device monitoring tool was built with React, Tailwind, and Material UI. It tracks device and sensor data across multiple networks.",
     image: "/work/device-monitoring.png",
-    tags: ["React", "MQTT", "Databricks"],
+    tags: ["React", "Tailwind", "Material UI"],
+    nda: true,
   },
   {
     title: "Device resource history",
     summary:
-      "Drill-in for one device: CPU, memory, and disk over a day. Same MQTT client setup and Databricks post-processing as the monitoring board.",
+      "Device resource history is a feature of the device monitoring tool. It lets people look back at a device’s disk, CPU, and memory usage, and it shows the pain points, such as when the device was down or in a critical state, so those moments are easier to spot.",
     image: "/work/device-history.png",
-    tags: ["React", "MQTT", "Databricks"],
+    tags: ["React", "Tailwind", "Material UI"],
+    nda: true,
   },
 ];
 

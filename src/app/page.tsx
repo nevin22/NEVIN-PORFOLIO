@@ -27,6 +27,9 @@ export default function Home() {
               <p className="mt-4 max-w-2xl text-base leading-7 text-muted sm:text-lg">
                 {profile.summary}
               </p>
+              <p className="mt-3 max-w-2xl text-base leading-7 text-muted">
+                {profile.howIWork}
+              </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
                   href={`mailto:${profile.email}`}
@@ -40,14 +43,6 @@ export default function Home() {
                   className="inline-flex h-11 items-center justify-center rounded-xl border border-white/10 px-4 text-sm font-medium transition hover:bg-white/5"
                 >
                   Download resume
-                </a>
-                <a
-                  href={profile.linkedin}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex h-11 items-center justify-center rounded-xl border border-white/10 px-4 text-sm font-medium transition hover:bg-white/5"
-                >
-                  LinkedIn
                 </a>
               </div>
               <ul className="mt-6 flex flex-wrap gap-2">
@@ -64,7 +59,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="xl:col-start-1">
+        {/* <div className="xl:col-start-1">
           <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
             {stats.map((stat) => (
               <article key={stat.value} className={`${card} p-5`}>
@@ -74,7 +69,7 @@ export default function Home() {
               </article>
             ))}
           </div>
-        </div>
+        </div> */}
 
         <div className="xl:col-start-2 xl:row-span-5 xl:row-start-1">
           <div className="xl:sticky xl:top-8">
@@ -131,13 +126,18 @@ export default function Home() {
                 <article key={group.title} className="rounded-2xl bg-white/4 p-5">
                   <p className="text-xs font-medium tracking-wide text-faint">{group.title}</p>
                   <p className="mt-3 text-xl font-semibold tracking-tight">{group.lead}</p>
-                  <ul className="mt-3 flex flex-wrap gap-2">
-                    {group.items.map((item) => (
-                      <li key={item} className="rounded-full bg-background/80 px-2.5 py-1 text-xs text-muted">
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
+                  {group.items.length > 0 ? (
+                    <ul className="mt-3 flex flex-wrap gap-2">
+                      {group.items.map((item) => (
+                        <li key={item} className="rounded-full bg-background/80 px-2.5 py-1 text-xs text-muted">
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                  {"note" in group && group.note ? (
+                    <p className="mt-3 text-sm leading-6 text-muted">{group.note}</p>
+                  ) : null}
                 </article>
               ))}
             </div>

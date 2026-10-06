@@ -56,23 +56,42 @@ export function Shell({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     const desktop = window.matchMedia("(min-width: 1280px)");
-    const nodes = nav
-      .filter((item) => !(desktop.matches && item.id === "contact"))
-      .map((item) => document.getElementById(item.id))
-      .filter((node): node is HTMLElement => Boolean(node));
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visible = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-        if (visible?.target.id) setActive(visible.target.id);
-      },
-      { rootMargin: "-30% 0px -45% 0px", threshold: [0.15, 0.4, 0.7] },
-    );
+    const update = () => {
+      const marker = window.innerHeight * 0.25;
+      const nodes = nav
+        .map((item) => document.getElementById(item.id))
+        .filter((node): node is HTMLElement => Boolean(node))
+        .filter((node) => !(desktop.matches && node.id === "contact"))
+        .sort((a, b) => a.getBoundingClientRect().top - b.getBoundingClientRect().top);
 
-    nodes.forEach((node) => observer.observe(node));
-    return () => observer.disconnect();
+      if (nodes.length === 0) return;
+
+      const atBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2;
+      if (atBottom) {
+        setActive(nodes[nodes.length - 1].id);
+        return;
+      }
+
+      let current = nodes[0].id;
+      for (const node of nodes) {
+        if (node.getBoundingClientRect().top <= marker) current = node.id;
+      }
+      setActive(current);
+    };
+
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    window.addEventListener("scrollend", update);
+    window.addEventListener("resize", update);
+    desktop.addEventListener("change", update);
+    return () => {
+      window.removeEventListener("scroll", update);
+      window.removeEventListener("scrollend", update);
+      window.removeEventListener("resize", update);
+      desktop.removeEventListener("change", update);
+    };
   }, []);
 
   useEffect(() => {
@@ -107,17 +126,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <div className="flex items-center gap-3 px-5 pt-6 pb-6">
-          <span className="grid h-10 w-10 place-items-center rounded-2xl bg-violet text-sm font-semibold text-white">
-            N
-          </span>
-          <div>
-            <p className="leading-none font-semibold">{profile.shortName}</p>
-            <p className="mt-1 text-xs text-faint">Portfolio</p>
-          </div>
-        </div>
-
-        <p className="px-5 pb-2 text-xs font-medium tracking-wide text-faint">Menu</p>
+        <p className="px-5 pt-6 pb-2 text-xs font-medium tracking-wide text-faint">Menu</p>
         <nav className="flex-1 space-y-1 px-3" aria-label="Sections">
           {nav.map((item, index) => {
             const Icon = icons[index];

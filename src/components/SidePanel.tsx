@@ -50,15 +50,17 @@ export function SidePanel() {
           </li>
           <li>
             <a
-              href={profile.phoneHref}
+              href={profile.github}
+              target="_blank"
+              rel="noreferrer"
               className="flex h-full items-center gap-3 rounded-2xl bg-white/4 px-3 py-3 transition hover:bg-white/7"
             >
               <IconWrap>
-                <PhoneIcon />
+                <GitHubIcon />
               </IconWrap>
-              <span>
-                <span className="block text-xs text-faint">Phone</span>
-                <span className="block text-sm">{profile.phoneDisplay}</span>
+              <span className="min-w-0">
+                <span className="block text-xs text-faint">GitHub</span>
+                <span className="block truncate text-sm">{profile.githubLabel}</span>
               </span>
             </a>
           </li>
@@ -116,13 +118,10 @@ function LinkIcon() {
   );
 }
 
-function PhoneIcon() {
+function GitHubIcon() {
   return (
-    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.75" aria-hidden>
-      <path
-        d="M8 4.5h2.2l1.2 3-1.6 1a12 12 0 0 0 5.5 5.5l1-1.6 3 1.2V16a2 2 0 0 1-2.2 2A14.5 14.5 0 0 1 6 6.7 2 2 0 0 1 8 4.5Z"
-        strokeLinejoin="round"
-      />
+    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor" aria-hidden>
+      <path d="M12 2C6.5 2 2 6.6 2 12.2c0 4.5 2.9 8.3 6.9 9.6.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1.1-1.4-1.1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.4 9.4 0 0 1 5.1 0c2-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5 4-1.3 6.9-5.1 6.9-9.6C22 6.6 17.5 2 12 2Z" />
     </svg>
   );
 }

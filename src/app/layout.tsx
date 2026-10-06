@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nevin22.vercel.app"),
   title: "Nevin Gabriel Prequencia — Full-Stack Developer",
   description:
     "Portfolio of Nevin Gabriel Prequencia, a full-stack developer working with React, TypeScript, Node.js, React Native, cloud platforms, and AI-assisted features.",

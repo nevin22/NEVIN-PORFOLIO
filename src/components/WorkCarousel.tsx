@@ -111,7 +111,12 @@ export function WorkCarousel() {
 
       <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div className="max-w-2xl" aria-live="polite">
-          <h3 className="text-base font-semibold">{slide.title}</h3>
+          <div className="flex flex-wrap items-center gap-2">
+            <h3 className="text-base font-semibold">{slide.title}</h3>
+            {slide.nda ? (
+              <span className="rounded-full bg-white/6 px-2.5 py-1 text-xs text-faint">Client work · NDA</span>
+            ) : null}
+          </div>
           <p className="mt-1 text-sm leading-6 text-muted">{slide.summary}</p>
           <ul className="mt-3 flex flex-wrap gap-2">
             {slide.tags.map((tag) => (
@@ -120,6 +125,20 @@ export function WorkCarousel() {
               </li>
             ))}
           </ul>
+          {slide.demo || slide.github ? (
+            <div className="mt-3 flex flex-wrap gap-3">
+              {slide.demo ? (
+                <a href={slide.demo} target="_blank" rel="noreferrer" className="text-sm font-medium text-accent hover:underline">
+                  Live demo
+                </a>
+              ) : null}
+              {slide.github ? (
+                <a href={slide.github} target="_blank" rel="noreferrer" className="text-sm font-medium text-accent hover:underline">
+                  GitHub
+                </a>
+              ) : null}
+            </div>
+          ) : null}
         </div>
         <div className="flex items-center gap-1.5" role="tablist" aria-label="Slides">
           {work.map((item, itemIndex) => (
