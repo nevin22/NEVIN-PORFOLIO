@@ -157,7 +157,7 @@ export const work: WorkItem[] = [
     title: "Visitour",
     summary:
       "Visitour is an all-in-one app for tourists, built with React Native and a Node.js and Express backend, with PesoPay as the payment gateway. People can book places to stay, book trips, and see what there is to explore wherever they are.",
-    image: "/work/visitour.png",
+    image: "/work/visitour-banner.jpg",
     tags: ["React Native", "Node.js", "Express", "PesoPay"],
   },
   {
