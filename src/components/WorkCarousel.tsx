@@ -160,7 +160,7 @@ export function WorkCarousel() {
       <div className="mt-6 hidden gap-3 sm:grid sm:grid-cols-4 lg:grid-cols-7">
         {work.map((item, itemIndex) => (
           <button
-            key={item.title}
+            key={item.image}
             type="button"
             onClick={() => go(itemIndex)}
             aria-label={`Show ${item.title}`}
