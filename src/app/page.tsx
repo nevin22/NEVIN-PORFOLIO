@@ -50,7 +50,8 @@ export default function Home() {
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
                   href={`mailto:${profile.email}`}
-                  className="inline-flex h-11 items-center justify-center rounded-xl bg-[#3cd6f5] px-4 text-sm font-semibold text-[#17181c] transition hover:bg-[#67e2f8]"
+                  className="inline-flex h-11 items-center justify-center rounded-xl px-4 text-sm font-semibold"
+                  style={{ backgroundColor: "#3cd6f5", color: "#17181c" }}
                 >
                   Get in touch
                 </a>
