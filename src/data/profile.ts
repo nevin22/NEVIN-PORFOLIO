@@ -140,17 +140,10 @@ export type WorkItem = {
 
 export const work: WorkItem[] = [
   {
-    title: "Visitour",
-    summary:
-      "Visitour is an all-in-one app for tourists, built with React Native and a Node.js and Express backend, with PesoPay as the payment gateway. People can book places to stay, book trips, and see what there is to explore wherever they are.",
-    image: "/work/visitour.png",
-    tags: ["React Native", "Node.js", "Express", "PesoPay"],
-  },
-  {
     title: "Streetby",
     summary:
       "Streetby is a lifestyle platform where merchants and consumers share a marketplace in one mobile app. It was built with React Native, and Node.js with Hapi.js on the backend, with PayMongo as the payment gateway.",
-    image: "/work/streetby.png",
+    image: "/work/streetby.jpg",
     tags: ["React Native", "Node.js", "Hapi.js", "PayMongo"],
   },
   {
@@ -159,6 +152,13 @@ export const work: WorkItem[] = [
       "Merchant ordering screen inside Streetby. It lets people order food from more than one merchant. Much like food panda. Though streetby offers more than just food.",
     image: "/work/streetby-order.png",
     tags: ["React Native", "Node.js"],
+  },
+  {
+    title: "Visitour",
+    summary:
+      "Visitour is an all-in-one app for tourists, built with React Native and a Node.js and Express backend, with PesoPay as the payment gateway. People can book places to stay, book trips, and see what there is to explore wherever they are.",
+    image: "/work/visitour.png",
+    tags: ["React Native", "Node.js", "Express", "PesoPay"],
   },
   {
     title: "User management",
