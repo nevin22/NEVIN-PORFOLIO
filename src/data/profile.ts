@@ -13,7 +13,7 @@ export const profile = {
   summary:
     "Full-stack developer working in React, TypeScript, and Node.js for the web, and React Native for mobile, with real-time systems on MQTT and Redis and cloud delivery on Azure and GCP.",
   howIWork:
-    "I take a feature from the requirement through the interface, the API, and deployment, then stay with it in production: releases, bugs, and the next change. That is the kind of ownership a small team needs.",
+    "I can handle a feature from start to finish: planning it, building the screens and the backend, and getting it live. After launch, I keep improving it by fixing bugs and shipping updates. I like owning my work from start to finish.",
 };
 
 export const buildPhrases = ["real-time systems", "AI features", "mobile apps"] as const;
