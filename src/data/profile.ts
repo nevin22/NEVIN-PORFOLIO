@@ -126,8 +126,6 @@ export const skillGroups = [
   }
 ];
 
-export const workNote = "These screenshots are client work, and the code is not public.";
-
 export type WorkItem = {
   title: string;
   summary: string;
@@ -191,6 +189,22 @@ export const work: WorkItem[] = [
     image: "/work/device-history.png",
     tags: ["React", "Tailwind", "Material UI"],
     nda: true,
+  },
+  {
+    title: "Kalipay 3D Prints",
+    summary:
+      "Kalipay 3D Prints is my own small business site, with a 3D modeling tool built in. People pick what they want to make (clickers, keychains, or vases), design it in the browser, and download a 3MF file they can send straight to a 3D printer.",
+    image: "/work/kalipay-landing.png",
+    tags: ["3D modeling", "3MF export", "Vercel"],
+    demo: "https://kalipay-3-d-prints.vercel.app/",
+  },
+  {
+    title: "Kalipay keychain editor",
+    summary:
+      "The keychain editor turns any name into a printable keychain. People choose the text, font, size, base shape, padding, colors, and ring hole position, see a live 3D preview with real measurements, and download a 3MF file ready to print.",
+    image: "/work/kalipay-keychain.png",
+    tags: ["3D preview", "3MF export", "Vercel"],
+    demo: "https://kalipay-3-d-prints.vercel.app/keychains",
   },
 ];
 

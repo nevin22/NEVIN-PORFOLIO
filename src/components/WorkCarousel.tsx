@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { work, workNote } from "@/data/profile";
+import { work } from "@/data/profile";
 
 const card =
   "rounded-3xl bg-card shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)]";
@@ -54,9 +54,7 @@ export function WorkCarousel() {
     >
       <div className="flex items-start justify-between gap-4 px-1">
         <div>
-          <h2 className="text-lg font-semibold tracking-tight">Work showcase</h2>
-          {workNote ? <p className="mt-1 max-w-xl text-sm text-faint">{workNote}</p> : null}
-        </div>
+          <h2 className="text-lg font-semibold tracking-tight">Work showcase</h2>        </div>
         <div className="flex shrink-0 gap-2">
           <button
             type="button"
