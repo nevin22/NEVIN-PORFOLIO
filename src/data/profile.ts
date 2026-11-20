@@ -45,8 +45,8 @@ export const jobs = [
     company: "MeldCX",
     role: "Full-Stack Developer",
     location: "Cagayan de Oro City, Philippines",
-    dates: "April 2021 — Present",
-    current: true,
+    dates: "April 2021 — October 2026",
+    current: false,
     points: [
       "Take features from client requirements through the React and TypeScript interface and the Node.js and Express API, then support them in production.",
       "Stream live device and sensor data over MQTT into dashboards, and use Redis for caching and backend workflows.",

@@ -4,7 +4,8 @@ const card =
   "rounded-3xl bg-card p-5 pb-6 shadow-[inset_0_0_0_1px_rgba(255,255,255,0.05)] sm:p-6 sm:pb-8";
 
 export function SidePanel() {
-  const current = jobs.find((job) => job.current) ?? jobs[0];
+  const currentJob = jobs.find((job) => job.current);
+  const current = currentJob ?? jobs[0];
 
   return (
     <div id="contact" className="scroll-mt-24 space-y-12">
@@ -72,7 +73,7 @@ export function SidePanel() {
 
       <div className="grid gap-12 sm:grid-cols-2 xl:grid-cols-1 xl:gap-12">
         <section className={card}>
-          <p className="text-xs font-medium tracking-wide text-faint">Now</p>
+          <p className="text-xs font-medium tracking-wide text-faint">{currentJob ? "Now" : "Latest role"}</p>
           <p className="mt-2 text-base font-semibold">{current.role}</p>
           <p className="mt-1 text-sm text-accent">{current.company}</p>
           <p className="mt-2 text-sm text-muted">{current.dates}</p>
